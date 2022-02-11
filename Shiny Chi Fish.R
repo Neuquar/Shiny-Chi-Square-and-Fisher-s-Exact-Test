@@ -1,5 +1,9 @@
+install.packages(shiny)
+install.packages(ggplot2)
+
 library(shiny)
 library(ggplot2)
+
 #UI
 ui <- fluidPage(
   
@@ -40,3 +44,4 @@ server <- function(input, output) {
 
 # Create Shiny app ----
 shinyApp(ui = ui, server = server)
+
